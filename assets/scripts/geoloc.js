@@ -5,7 +5,7 @@ function getGeolocationByIP() {
         .then(response => response.json())
         .then(data => {
             const currentCity = data.city;
-            const cityElements = document.querySelectorAll("model-city");
+            const cityElements = document.querySelectorAll("#model-city");
             
             cityElements.forEach(element => {
                 element.textContent = currentCity;
